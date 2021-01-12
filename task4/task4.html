@@ -4,173 +4,27 @@
 <head>
     <meta charset="utf-8">
     <title>task4</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: #eff0f4;
-        }
-
-        .header {
-            position: fixed;
-            background-color: #5fc0cd;
-            width: 100%;
-            height: 150.5px;
-            z-index: 777;
-        }
-
-        .p1 {
-            color: white;
-            margin: 0;
-            position: absolute;
-            left: 52.5px;
-            line-height: 150.5px;
-            font-size: 32px;
-        }
-
-        .p2 {
-            color: white;
-            margin: 0;
-            position: absolute;
-            right: 52.5px;
-            line-height: 150.5px;
-            font-size: 32px;
-        }
-
-        .p3 {
-            color: white;
-            line-height: 150.5px;
-            font-size: 40px;
-            text-align: center;
-            margin: 0;
-        }
-
-        .p4 {
-            color: white;
-            line-height: 175px;
-            font-size: 40px;
-            text-align: center;
-            letter-spacing: 20px;
-            text-indent: 20px;
-            margin: 0;
-        }
-
-        .p5 {
-            color: #83ccd7;
-            text-align: right;
-            font-size: 48px;
-            margin: 35px 52.5px 0 auto;
-            text-decoration: underline;
-        }
-
-        .wrap {
-            overflow: hidden;
-            background-color: white;
-            display: inline-block;
-            margin: 178.5px 0 24.5px 0;
-            width: 100%;
-            height: 175px;
-        }
-
-        .iphone {
-
-            vertical-align: top;
-            margin-top: 35px;
-            padding: 15px 77px;
-            border-right: 1.75px solid #eaedee;
-            width: 47px;
-            height: 72px;
-        }
-
-        .phonenumber {
-            padding-left: 50px;
-            padding-right: auto;
-            outline: medium;
-            height: 175px;
-            border: 0;
-            font-size: 48px;
-        }
-
-        .case {
-            overflow: hidden;
-            background-color: white;
-            display: inline-block;
-            margin: 0 0 120px 0;
-            width: 100%;
-            height: 175px;
-        }
-
-        .locked {
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 35px;
-            padding: 15px 77px;
-            border-right: 1.75px solid #eaedee;
-            width: 47px;
-            height: 72px;
-        }
-
-        .password {
-            padding-left: 50px;
-            padding-right: auto;
-            outline: medium;
-            height: 175px;
-            border: 0;
-            font-size: 48px;
-        }
-
-        .sign {
-            background-color: #5fc0cd;
-            width: 100%;
-            height: 175px;
-        }
-
-
-        input::-webkit-input-placeholder {
-            color: #e1e5e7;
-            font-size: 48px;
-        }
-
-
-        input:-moz-placeholder {
-            color: #e1e5e7;
-            opacity: 1;
-            font-size: 48px;
-        }
-
-
-        input::-moz-placeholder {
-            color: #e1e5e7;
-            opacity: 1;
-            font-size: 48px;
-        }
-
-
-        input:-ms-input-placeholder {
-            color: #e1e5e7;
-            font-size: 48px;
-        }
-    </style>
+    <link rel="stylesheet" href="task4.css" >
 </head>
 
 <body>
     <div class="header">
-        <p class="p1">关闭</p>
-        <p class="p2">注册</p>
-        <p class="p3">登陆</p>
+        <a href="" class="close">关闭</a>
+        <a href="" class="login">注册</a>
+        <p class="theme">登陆</p>
     </div>
     <div class="wrap">
-        <img class="iphone" src="iphone.png"><input class="phonenumber" type="text" placeholder="请输入手机号">
+        <img class="iphone" src="iphone.png">
+        <input class="enter" type="text" placeholder="请输入手机号">
     </div>
     <div class="case">
-        <img class="locked" src="locked .png"><input class="password" type="password" placeholder="请输入密码">
+        <img class="locked" src="locked.png">
+        <input class="enter" type="password" placeholder="请输入密码">
     </div>
-    <div class="sign">
-        <p class="p4">登陆</p>
-    </div>
+    <button type="submit" class="sign">登陆</button>
     <div class="forget">
-        <p class="p5">忘记密码？</p>
+        <a href="">忘记密码？</a>
     </div>
-
 </body>
 
 </html>
