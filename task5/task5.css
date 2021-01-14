@@ -1,0 +1,192 @@
+html {
+    font-size: 10px;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    line-height: 4rem;
+    text-align: center;
+    background-color: #5fc0cd;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    z-index: 9999;
+}
+
+.back {
+    float: left;
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+.empty {
+    float: right;
+    font-size: 1.8rem;
+    color: white;
+    margin: 0 1.5rem 0 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    overflow-y: auto;
+}
+
+.content {
+    margin-bottom: 8.3rem;
+}
+
+.bg {
+    width: 100%;
+    height: 16.4rem;
+    background: url(1.png);
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    background-size: cover;
+}
+
+.information {
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+}
+
+.avatar {
+    width: 8.4rem;
+    height: 8.4rem;
+    float: left;
+    margin-left: 1.5rem;
+}
+
+.person {
+    float: left;
+    margin-left: 2rem;
+    color: white;
+}
+
+.name {
+    font-size: 1.8rem;
+    margin: 1.9rem 0 0.6rem 0;
+}
+
+.age {
+    font-size: 1.4rem;
+}
+
+.location {
+    margin: 0.6rem 0 2.5rem 0;
+}
+
+.location-img {
+    vertical-align: middle;
+    width: 0.9rem;
+    height: 1.2rem;
+}
+
+.address {
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+
+.skill-title {
+    margin: 1.7rem 1.5rem;
+    padding-left: 1.3rem;
+    border-left: 0.5px solid #5fc0cd;
+    font-size: 1.6rem;
+}
+
+.skill {
+    border-top: 0.5px solid #e1e5e7;
+    border-bottom: 0.5px solid #e1e5e7;
+}
+
+.line {
+    display: flex;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    border-bottom: 1px solid #e1e5e7;
+    vertical-align: middle;
+}
+
+.home {
+    display: inline-block;
+    margin: 1.8rem 0.8rem 1.8rem 1.4rem;
+    padding: 0 1rem 0 0;
+    border-right: 1px solid #e1e5e7;
+}
+
+.food {
+    display: inline-flex;
+    align-items: center;
+}
+
+.star {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.ask {
+    font-size: 1.6rem;
+}
+
+label {
+    color: #999999;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 1.7rem 0 1.7rem 1.4rem;
+    padding-right: 1.3rem;
+    border-right: 1px solid #e1e5e7;
+}
+
+.answer {
+    display: inline-flex;
+    flex: 1;
+    margin-left: 1.3rem;
+    font-size: 1.6rem;
+    align-items: center;
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.message {
+    flex: 1;
+    color: #5fc0cd;
+    border-radius: 5px;
+    border-color: #5fc0cd;
+    border-style: solid;
+    margin: 2rem 1.8rem 0 1.3rem;
+    padding: 1.3rem 0;
+}
+
+.iphone {
+    flex: 1;
+    color: white;
+    background-color: #5fc0cd;
+    border-radius: 5px;
+    border-color: #5fc0cd;
+    border-style: solid;
+    margin: 2rem 1.8rem 0 0;
+    padding: 1.3rem 0;
+}
