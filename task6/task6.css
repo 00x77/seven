@@ -68,6 +68,7 @@ a:active {
     display: flex;
     width: 100%;
     z-index: 9999;
+    
 }
 
 .itemlist {
@@ -81,12 +82,17 @@ a:active {
     text-align: center;
 }
 
+.drap {
+    border-bottom: 0.1rem solid #e1e5e7;
+}
+
 .list {
     background-color: white;
     color: #999;
     display: block;
     width: 100%;
     border-right: 0.1rem solid #e1e5e7;
+    border-image:linear-gradient(#fff, #e1e5e7,#fff)1;
     border-bottom: 0.1rem solid #e1e5e7;
 }
 
@@ -95,7 +101,7 @@ a:active {
     height: 0.4rem;
     background-image: url(spr.png);
     background-repeat: no-repeat;
-    background-position-x: -9.5rem;
+    background-position: -7.7rem -0.7rem;
     position: absolute;
     right: 0.6rem;
     top: 1.8rem;
@@ -133,7 +139,7 @@ main {
 
 .mainline {
     position: relative;
-    border-bottom:0.1rem solid #e1e5e7 ;
+    border-top: 0.1rem solid #e1e5e7 ;
     overflow-y: auto;
 }
 
