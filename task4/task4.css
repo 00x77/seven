@@ -27,6 +27,7 @@ header {
     font-size: 1.6rem;
     text-decoration: none;
     color: white;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .theme {
@@ -47,6 +48,7 @@ header {
     line-height: 4.4rem;
     text-decoration: none;
     color: white;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 main {
@@ -109,20 +111,22 @@ main {
     height: 5rem;
     padding: 0;
     border: 0;
+    outline: none;
     font-size: 1.8rem;
-    letter-spacing: 1rem;
-    text-indent: 0.5rem;
     background-color: #5fc0cd;
     color: white;
 }
 
 .forget {
+    float: right;
     margin: 1rem 1.7rem 0 auto;
     font-size: 1.6rem;
     text-align: right;
-}
-
-.forget > a {
     text-decoration: none;
     color: #83ccd7;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:active {
+    color: purple;
 }

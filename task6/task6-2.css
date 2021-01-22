@@ -30,7 +30,8 @@ header {
   padding: 0.7rem 1.5rem;
 }
 
-.nav>li.active>a {
+.nav>li.active>a,
+.nav-pills>li.active>a:hover {
   background-color: #fff;
   color: #5fc0cd;
 }
@@ -118,7 +119,7 @@ main {
 }
 
 .firstline {
-  margin: 1.5rem auto 1.2rem 1.5rem;
+  margin: 1.45rem auto 1.2rem 1.5rem;
 }
 
 .calendar {
