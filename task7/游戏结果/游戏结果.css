@@ -1,0 +1,156 @@
+html {
+    font-size: 10px;
+    font-size: 62.5%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 4.5rem;
+    border-bottom: 0.1rem solid #74d4eb;
+}
+
+.text-center {
+    width: 100%;
+    height: 4.4rem;
+    font-size: 1.7rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.2rem;
+    text-indent: 0.2rem;
+    background-color: #29bde0;
+    color: #fff;
+}
+
+.pull-left {
+    display: inline-block;
+    position: absolute;
+    top: 1.25rem;
+    left: 1rem;
+    width: 2.6rem;
+    height: 2.1rem;
+    background-image: url(spr.png);
+    background-repeat: no-repeat;
+    background-position-y: -12.3rem;
+}
+
+.pull-right {
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    width: 2.6rem;
+    height: 2rem;
+    background-image: url(spr.png);
+    background-repeat: no-repeat;
+    background-position: 0.6rem -10.3rem;
+}
+
+main {
+    position: absolute;
+    top: 4.4rem;
+    padding-bottom: 6.5rem;
+}
+
+.content {
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    height: 32.5rem;
+    padding-top: 1.1rem;
+    text-align: center;
+    background-color: #29bde0;
+}
+
+div.title {
+    width: 100%;
+    height: 11.4rem;
+    background-image: url(main.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+h3 {
+    position: relative;
+    top: 6.7rem;
+    margin: 0;
+    padding: 5rem auto;
+    color: #fff;
+}
+
+p {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.great {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
+    color: #ffc865;
+}
+
+.result {
+    font-size: 1.3rem;
+    text-align: left;
+    color: #fff;
+}
+
+.line {
+    padding-top: 0.7rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 0.1rem solid #a6a6a6;
+}
+
+.line-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    font-size: 1.5rem;
+    color: #515151;
+}
+
+.time {
+    font-size: 1rem;
+    color: #a6a6a6;
+}
+
+.process {
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    color: #a6a6a6;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 6.5rem;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(41,189,224,0.5);
+}
+
+.btn {
+    width: 13.5rem;
+    height: 4.3rem;
+}
+
+.btn-left {
+    background-color: #f66f6f;
+    color: #fff;
+    
+}
+
+.btn-right {
+    background-color: #fbb435;
+    color: #fff;
+}
+
+
