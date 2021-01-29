@@ -9,41 +9,43 @@ body {
 
 header {
     position: fixed;
+    top: 0;
+    z-index: 999999;
     width: 100%;
+    height: 4rem;
+    font-size: 1.6rem;
     line-height: 4rem;
     text-align: center;
+    letter-spacing: .2rem;
+    text-indent: .1rem;
     background-color: #5fc0cd;
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
-    color: white;
-    z-index: 9999;
+    color: #fff;
 }
 
 .back {
-    display: inline-block;
     position: absolute;
     left: 1.25rem;
     top: 1.1rem;
+    display: inline-block;
     width: 1rem;
     height: 1.75rem;
     background-image: url(back.png);
 }
 
 main {
-    width: 100%;
     position: absolute;
     top: 4rem;
-    padding-bottom: 0.6rem;
+    width: 100%;
 }
 
 .content {
-    margin-bottom: 8.3rem;
+    margin-bottom: 9rem;
 }
 
 .bg {
+    margin-top: -.5rem;
     width: 100%;
     height: 16.4rem;
-    margin-top: -0.5rem;
     background: url(1.png);
     background-repeat: no-repeat;
     -webkit-filter: blur(3px);
@@ -53,27 +55,27 @@ main {
 }
 
 .information {
-    width: 100%;
     position: absolute;
     top: 4rem;
+    width: 100%;
 }
 
 .avatar {
-    width: 8.4rem;
-    height: 8.4rem;
     float: left;
     margin-left: 1.5rem;
+    width: 8.4rem;
+    height: 8.4rem;
 }
 
 .person {
     float: left;
     margin-left: 2rem;
-    color: white;
+    color: #fff;
 }
 
 .name {
+    margin: 1.9rem 0 .6rem 0;
     font-size: 1.8rem;
-    margin: 1.9rem 0 0.6rem 0;
 }
 
 .age {
@@ -81,30 +83,30 @@ main {
 }
 
 .location {
-    margin: 0.6rem 0 2.5rem 0;
+    margin: .6rem 0 2.5rem 0;
 }
 
 .location-img {
-    vertical-align: middle;
-    width: 0.9rem;
+    width: .9rem;
     height: 1.2rem;
+    vertical-align: middle;
 }
 
 .address {
-    vertical-align: middle;
     font-size: 1.2rem;
+    vertical-align: middle;
 }
 
 .skill-title {
     margin: 1.7rem 1.5rem;
     padding-left: 1.3rem;
-    border-left: 0.5px solid #5fc0cd;
+    border-left: .5px solid #5fc0cd;
     font-size: 1.6rem;
 }
 
 .skill {
-    border-top: 0.5px solid #e1e5e7;
-    border-bottom: 0.5px solid #e1e5e7;
+    border-top: .5px solid #e1e5e7;
+    border-bottom: .5px solid #e1e5e7;
 }
 
 .line {
@@ -117,7 +119,7 @@ main {
 
 .home {
     display: inline-block;
-    margin: 1.8rem 0.8rem 1.8rem 1.4rem;
+    margin: 1.8rem .8rem 1.8rem 1.4rem;
     padding: 0 1rem 0 0;
     border-right: 1px solid #e1e5e7;
 }
@@ -137,48 +139,46 @@ main {
 }
 
 label {
-    color: #999999;
     display: inline-block;
-    font-size: 1.6rem;
     margin: 1.7rem 0 1.7rem 1.4rem;
     padding-right: 1.3rem;
     border-right: 1px solid #e1e5e7;
+    font-size: 1.6rem;
+    color: #999;
 }
 
 .answer {
-    display: inline-flex;
     flex: 1;
+    display: inline-flex;
     margin-left: 1.3rem;
     font-size: 1.6rem;
     align-items: center;
 }
 
 footer {
-    background-color: white;
-    width: 100%;
     position: fixed;
     bottom: 0;
     display: flex;
     padding-bottom: 2rem;
+    width: 100%;
+    background-color: #fff;
 }
 
 .message {
     flex: 1;
-    color: #5fc0cd;
-    border-radius: 5px;
-    border-color: #5fc0cd;
-    border-style: solid;
-    margin: 2rem 1.8rem 0 1.3rem;
     padding: 1.3rem 0;
+    margin: 2rem 1.8rem 0 1.3rem;
+    border: .2rem solid #5fc0cd;
+    border-radius: .5rem;
+    color: #5fc0cd;
 }
 
 .iphone {
     flex: 1;
-    color: white;
-    background-color: #5fc0cd;
-    border-radius: 5px;
-    border-color: #5fc0cd;
-    border-style: solid;
-    margin: 2rem 1.8rem 0 0;
     padding: 1.3rem 0;
+    margin: 2rem 1.8rem 0 0;
+    border: .2rem solid #5fc0cd;
+    border-radius: .5rem;
+    background-color: #5fc0cd;
+    color: #fff;
 }
