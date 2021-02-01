@@ -1,24 +1,23 @@
 html {
-    font-size: 10px;
     font-size: 62.5%;
 }
 
 header {
     position: fixed;
     top: 0;
-    z-index: 9999;
     width: 100%;
     height: 4.5rem;
     border-bottom: 0.1rem solid #74d4eb;
+    z-index: 9999;
 }
 
-.text-center {
+.topbar {
     width: 100%;
     height: 4.4rem;
     font-size: 1.7rem;
     line-height: 4.4rem;
-    letter-spacing: 0.2rem;
-    text-indent: 0.2rem;
+    letter-spacing: .2rem;
+    text-indent: .2rem;
     background-color: #29bde0;
     color: #fff;
 }
@@ -44,11 +43,13 @@ header {
     height: 2rem;
     background-image: url(spr.png);
     background-repeat: no-repeat;
-    background-position: 0.6rem -10.3rem;
+    background-position: .6rem -10.3rem;
 }
 
 main {
     position: absolute;
+    width: 100%;
+    min-width: 32rem;
     top: 4.4rem;
     padding-bottom: 6.5rem;
 }
@@ -57,7 +58,6 @@ main {
     position: relative;
     overflow-y: auto;
     width: 100%;
-    height: 32.5rem;
     padding-top: 1.1rem;
     text-align: center;
     background-color: #29bde0;
@@ -80,8 +80,10 @@ h3 {
 }
 
 p {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 0 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .3rem;
 }
 
 .great {
@@ -92,10 +94,43 @@ p {
     color: #ffc865;
 }
 
+@media (min-width: 600px) {
+    .great {
+        text-align: center;
+    }
+}
+
 .result {
     font-size: 1.3rem;
     text-align: left;
     color: #fff;
+}
+
+.result > p:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result > p:nth-child(2) > .identity {
+    display: inline-block;
+    width: 3.9rem;
+    height: 1.8rem;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.result > p:nth-child(2) > .identity::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.result > p:nth-child(2) > .number {
+    margin-right: 2rem;
+}
+
+.result > p:last-child {
+    margin-bottom: 1rem;
 }
 
 .line {
@@ -123,6 +158,7 @@ p {
     font-size: 1.3rem;
     letter-spacing: 0.05rem;
     color: #a6a6a6;
+    white-space: nowrap;
 }
 
 footer {

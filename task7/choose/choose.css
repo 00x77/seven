@@ -1,28 +1,41 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: #f0f0f0;
 }
 
-.navbar-default {
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 29.5rem;
+    z-index: 9999;
+}
+
+.navbar {
     height: 6.4rem;
-    background-color: #29bde0;
     border: 0;
+    background-color: #29bde0;
 }
 
 .menu {
-    width: 1.7rem;
-    height: 1.5rem;
     position: absolute;
     bottom: 1rem;
     left: 1.1rem;
+    width: 1.7rem;
+    height: 1.5rem;
     background-image: url(spr.png);
     background-repeat: no-repeat;
-    background-position: -2.8rem -0.1rem;
+    background-position: -2.8rem -.1rem;
 }
 
 main {
     position: absolute;
     top: 6.4rem;
     width: 100%;
+    min-width: 29.5rem;
 }
 
 .panel {
@@ -33,52 +46,59 @@ main {
 
 .panel-body {
     position: relative;
+    padding: 1.5rem 2.8rem;
     font-size: 1.7rem;
     background-color: #fff;
     color: #9a9a9a;
-    padding: 1.5rem 2.8rem;
 }
 
 .jump {
-    width: 1.1rem;
-    height: 2rem;
     position: absolute;
     top: 1.5rem;
-    right: 0.7rem;
+    right: .7rem;
+    width: 1.1rem;
+    height: 2rem;
     background-image: url(spr.png);
     background-repeat: no-repeat;
-    background-position: -1.5rem 0.1rem;
+    background-position: -1.5rem .1rem;
     background-color: transparent;
 }
 
 .panel-default > .panel-heading {
+    border-color: #fdd793;
     font-size: 1.9rem;
     background-color: #fff;
     color: #fbb435;
-    border-color: #fdd793;
+}
+
+.panel:last-child > .panel-body {
+    padding: 1.5rem 2.8rem 1rem 2.8rem;
 }
 
 .wrap {
+    width: 100%;
     padding: 2.5rem 0;
+    border: 0;
+    outline: none !important;
     font-size: 1.6rem;
+    letter-spacing: .2rem;
     background-color: #69d1e9;
     color: #fff;
-    letter-spacing: 0.2rem;
 }
 
 .people {
     padding: 1.2rem 0;
     font-size: 1.4rem;
-    color: #787878;
     letter-spacing: 0.1rem;
+    color: #787878;
 }
 
 .turnpage {
-    width: 1.4rem;
-    height: 2.8rem;
     position: absolute;
     top: 15.2rem;
-    right: 0.4rem;
+    right: .4rem;
+    width: 1.4rem;
+    height: 2.8rem;
     background-image: url(spr.png);
     background-repeat: no-repeat;
     background-color: transparent;
@@ -86,9 +106,9 @@ main {
 
 .page-navigation {
     position: absolute;
-    bottom: 0.05rem;
+    bottom: .05rem;
     left: 50%;
-    text-indent: -100%;
+    transform: translate(-50%);
 }
 
 .pagination {
@@ -96,13 +116,13 @@ main {
 }
 
 .pagination > li > a {
-    padding: 0.3rem;
+    padding: .3rem;
+    margin: 0 .25rem;
     border-radius: 50%;
-    margin: 0 0.25rem;
 }
 
 .pagination > .active > a,
 .pagination > .active > a:hover {
-    background-color: #69d1e9;
     border-color: #69d1e9;
+    background-color: #69d1e9;
 }
