@@ -111,7 +111,7 @@ p {
     flex-wrap: wrap;
 }
 
-.result > p:nth-child(2) > .identity {
+.result > p:nth-child(2) .identity {
     display: inline-block;
     width: 3.9rem;
     height: 1.8rem;
@@ -119,14 +119,20 @@ p {
     overflow: hidden;
 }
 
-.result > p:nth-child(2) > .identity::after {
+.result > p:nth-child(2) .identity::after {
     content: "";
     width: 100%;
     display: inline-block;
 }
 
-.result > p:nth-child(2) > .number {
+.result > p:nth-child(2) .number {
     margin-right: 2rem;
+}
+
+label {
+    display: flex;
+    margin-bottom: 0;
+    font-weight: 500;
 }
 
 .result > p:last-child {
@@ -181,7 +187,16 @@ footer {
 .btn-left {
     background-color: #f66f6f;
     color: #fff;
-    
+}
+
+.btn-left > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 2.9rem;
+    text-decoration: none;
+    outline: none !important;
+    color: #fff;
 }
 
 .btn-right {
