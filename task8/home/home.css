@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    min-width: 56rem;
+    width: 100%;
+    min-width: 45rem;
     background-color: #fafafa;
 }
 
@@ -11,7 +12,14 @@ header,
 main,
 footer {
     width: 100%;
-    min-width: 56rem;
+    min-width: 45rem;
+    overflow: hidden;
+}
+
+@media(max-width:768px) {
+    .container {
+        padding: 0 4rem;
+    }
 }
 
 /*导航栏顶端开始*/
@@ -45,7 +53,6 @@ footer {
 /*导航栏开始*/
 .navbar {
     width: 100%;
-    min-width: 56rem;
     margin-bottom: 0;
     border: 0;
     border-radius: 0;
@@ -95,7 +102,6 @@ footer {
 /*轮播图开始*/
 .homepage {
     width: 100%;
-    min-width: 56rem;
 }
 
 .carousel {
@@ -166,16 +172,10 @@ footer {
 /*高效 规范 人脉开始*/
 .first-row {
     position: relative;
-    min-width: 56rem;
     margin-top: 16.4rem;
 }
 
-.first-row > .col-md-3 {
-    height: 26.4rem;
-}
-
 .first-row > .col-md-3 > .thumbnail {
-    height: 26.4rem;
     border: 0;
     background-color: #fafafa;
 }
@@ -215,13 +215,7 @@ footer {
     visibility: hidden;
     background-color: #dedede;
     background-image: repeating-linear-gradient(0deg,#dedede,#dedede 1.3rem,#fff 1.3rem,#fff 1.8rem);
-}
-
-@media (min-width: 768px) {
-    .border {
-        visibility: visible;
-    }
-}
+} 
 
 .first-row > .col-md-3:last-child {
     padding-top: 5.8rem;
@@ -256,6 +250,30 @@ footer {
 .list-group > .list-group-item:nth-child(4) {
     margin-bottom: 1.4rem;
 }
+
+@media(min-width: 768px) {
+    .first-row > .col-md-3 {
+        height: 26.4rem;
+    }
+
+    .border {
+        visibility: visible;
+    }
+
+    .first-row > .col-md-3 > .thumbnail {
+        height: 26.4rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .first-row {
+        margin-top: 7.4rem;
+    }
+
+    .first-row > .col-md-3:last-child {
+        padding-top: 0;
+    }
+}
 /*高效 规范 人脉结束*/
 
 /*如何学习开始*/
@@ -275,7 +293,6 @@ footer {
 }
 
 .second-row > .panel {
-    min-width: 56rem;
     position: relative;
 }
 
@@ -350,7 +367,6 @@ footer {
 /*优秀学员展示开始*/
 .third-row > .panel {
     width: 100%;
-    min-width: 56rem;
 }
 
 .third-row > .panel > .panel-heading {
@@ -457,7 +473,6 @@ nav {
 
 .forth-row > .panel {
     width: 100%;
-    min-width: 56rem;
     margin-bottom: 9rem;
 }
 
@@ -520,13 +535,8 @@ nav {
     background-color: #fff;
 }
 
-.btmbar-white > .container {
-    padding-right: 0;
-}
-
 .fifth-row > .panel {
     width: 100%;
-    min-width: 56rem;
     margin-bottom: 0;
 }
 
@@ -574,7 +584,6 @@ nav {
 /*底栏开始*/
 .btmbar-center {
     width: 100%;
-    min-width: 56rem;
     border-top: 0.1rem solid #32c086;
     border-bottom: 0.1rem solid #32c086;
     background-color: #26a26f;
@@ -584,6 +593,7 @@ nav {
 .inter {
     padding: 0;
     border: 0;
+    margin-bottom: 0;
     background-color: transparent;
 }
 
@@ -595,6 +605,7 @@ nav {
 }
 
 .jnshu > ul {
+    display: inline-block;
     padding: 0;
 }
 
@@ -638,14 +649,13 @@ nav {
     color: #fff;
 }
 
-.sixthrow a:hover,
-.sixthrow a:focus,
-.sixthrow a:active {
+.sixth-row a:hover,
+.sixth-row a:focus,
+.sixth-row a:active {
     border-bottom-color: #fff;
 }
 
 .code {
-    float: right;
     margin-top: 3.4rem;
     padding: 0;
     border: 0;
@@ -656,12 +666,46 @@ nav {
     font-size: 1.6rem;
     color: #fff;
 }
+
+.code > img {
+    margin: 0;
+}
+
+@media(min-width: 580px) {
+    .sixth-row > .col-sm-5 {
+        float: left;
+        width: 41.66666667%;
+    }
+
+    .sixth-row > .col-sm-2 {
+        float: left;
+        width: 16.66666667%;
+    }
+}
+
+@media(max-width: 580px) {
+    .code {
+        margin-top: 0;
+    }
+
+    .inter > p {
+        margin-top: 0;
+    }
+
+    .jnshu > p {
+        margin-top: 3.4rem;
+        margin-bottom: 3.4rem;
+    }
+}
 /*底栏结束*/
 
 .btmbar3 {
     width: 100%;
-    min-width: 56rem;
     line-height: 3rem;
     background-color: #26a26f;
     color: #fff;
+}
+
+.btmbar3 > p {
+    margin-bottom: 0;
 }
