@@ -91,12 +91,6 @@ footer {
   }
 }
 
-.navbar-nav > .active > a {
-  border-bottom-color: #fff;
-  background-color: transparent !important;
-  color: #fff !important;
-}
-
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus,
 .navbar-nav > li > a:active {
