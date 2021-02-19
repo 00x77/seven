@@ -77,12 +77,20 @@ main {
 
 .wrap {
     width: 100%;
-    padding: 2.5rem 0;
     border: 0;
     outline: none !important;
     font-size: 1.6rem;
     letter-spacing: .2rem;
     background-color: #69d1e9;
+    color: #fff;
+}
+
+.wrap > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 0;
+    text-decoration: none;
     color: #fff;
 }
 
