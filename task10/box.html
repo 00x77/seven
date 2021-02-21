@@ -62,150 +62,149 @@
 
     <div class="container">
       <div class="row">
-        <p>请您按照以下步骤来定制您的纸箱</p>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <img src="img/box.png">
-            选择箱型
-          </div>
-          <div class="panel-body panel-body-box">
-            <form>
-              <input type="radio" name="box" id="box1" class="radio">
-              <label for="box1" class="box1">
-                <div class="round"></div>
-                对口箱
-              </label>
-              <input type="radio" name="box" id="box2" class="radio">
-              <label for="box2" class="box2">
-                <div class="round"></div>
-                飞机盒
-              </label>
-              <input type="radio" name="box" id="box3" class="radio">
-              <label for="box3" class="box3">
-                <div class="round"></div>
-                天地盖
-              </label>
-            </form>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                查看详情 <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">zizizi</a></li>
-                <li><a href="#">ziiziz</a></li>
-                <li><a href="#">ziziiz</a></li>
-                <li><a href="#">zizizi</a></li>
-              </ul>
+        <form action="#">
+          <p>请您按照以下步骤来定制您的纸箱</p>
+          <div class="panel panel-default">
+
+            <div class="panel-heading">
+              <img src="img/box.png">
+              选择箱型
             </div>
-          </div>
-  
-          <div class="panel-heading">
-            <img src="img/Ruler.png">
-            确定尺寸
-          </div>
-          <div class="panel-body panel-body-size">
-            <div class="panel-body-left">
-              <form>
-                <input type="radio" name="box" id="margin" class="radio">
-                <label for="margin" style="margin-right: 6rem;">
+            <div class="panel-body panel-body-box">
+              <div class="panel-body-left">
+                <input type="radio" name="box" id="box1" class="radio">
+                <label for="box1" class="box1">
                   <div class="round"></div>
-                  外径
+                  对口箱
                 </label>
-                <label class="text">
-                  <span>长<input type="text">mm</span>
-                  <span>宽<input type="text">mm</span>
-                  <span>高<input type="text">mm</span>
-  
-                </label>
-              </form>
-              <form>
-                <input type="radio" name="box" id="padding" class="radio">
-                <label for="padding" style="margin-right: 6rem;">
+                <input type="radio" name="box" id="box2" class="radio">
+                <label for="box2" class="box2">
                   <div class="round"></div>
-                  内径
+                  飞机盒
                 </label>
-                <label class="text">
-                  <span>长<input type="text">mm</span>
-                  <span>宽<input type="text">mm</span>
-                  <span>高<input type="text">mm</span>
+                <input type="radio" name="box" id="box3" class="radio">
+                <label for="box3" class="box3">
+                  <div class="round"></div>
+                  天地盖
                 </label>
-              </form>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  查看详情 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">zizizi</a></li>
+                  <li><a href="#">ziiziz</a></li>
+                  <li><a href="#">ziziiz</a></li>
+                  <li><a href="#">zizizi</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                查看详情 <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">zizizi</a></li>
-                <li><a href="#">ziiziz</a></li>
-                <li><a href="#">ziziiz</a></li>
-                <li><a href="#">zizizi</a></li>
-              </ul>
+
+            <div class="panel-heading">
+              <img src="img/Ruler.png">
+              确定尺寸
             </div>
-          </div>
-  
-          <div class="panel-heading">
-            <img src="img/Cut.png">
-            选择材质
-          </div>
-          <div class="panel-body panel-body-material">
-            <div class="panel-body-left">
-              <input type="radio" name="box" id="A" class="radio">
-              <label for="A">
-                <div class="round"></div>
-                三层A瓦优质
-              </label>
-              <input type="radio" name="box" id="B" class="radio">
-              <label for="B">
-                <div class="round"></div>
-                三层A瓦优质
-              </label>
-              <input type="radio" name="box" id="C" class="radio">
-              <label for="C">
-                <div class="round"></div>
-                三层A瓦优质
-              </label>
-              <input type="radio" name="box" id="D" class="radio">
-              <label for="D">
-                <div class="round"></div>
-                三层A瓦优质
-              </label>
-              <input type="radio" name="box" id="E" class="radio">
-              <label for="E">
-                <div class="round"></div>
-                三层A瓦优质
-              </label>
-  
+            <div class="panel-body panel-body-size">
+              <div class="panel-body-left">
+                <div>
+                  <input type="radio" name="box" id="margin" class="radio">
+                  <label for="margin" style="margin-right: 6rem;">
+                    <div class="round"></div>
+                    外径
+                  </label>
+                  <label class="text">
+                    <span>长<input type="text" maxlength="4">mm</span>
+                    <span>宽<input type="text" maxlength="4">mm</span>
+                    <span>高<input type="text" maxlength="4">mm</span>
+
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" name="box" id="padding" class="radio">
+                  <label for="padding" style="margin-right: 6rem;">
+                    <div class="round"></div>
+                    内径
+                  </label>
+                  <label class="text">
+                    <span>长<input type="text" maxlength="4">mm</span>
+                    <span>宽<input type="text" maxlength="4">mm</span>
+                    <span>高<input type="text" maxlength="4">mm</span>
+                  </label>
+                </div>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  查看详情 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">zizizi</a></li>
+                  <li><a href="#">ziiziz</a></li>
+                  <li><a href="#">ziziiz</a></li>
+                  <li><a href="#">zizizi</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                查看详情 <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">zizizi</a></li>
-                <li><a href="#">ziiziz</a></li>
-                <li><a href="#">ziziiz</a></li>
-                <li><a href="#">zizizi</a></li>
-              </ul>
+
+            <div class="panel-heading">
+              <img src="img/Cut.png">
+              选择材质
             </div>
+            <div class="panel-body panel-body-material">
+              <div class="panel-body-left">
+                <input type="radio" name="box" id="A" class="radio">
+                <label for="A">
+                  <div class="round"></div>
+                  三层A瓦优质
+                </label>
+                <input type="radio" name="box" id="B" class="radio">
+                <label for="B">
+                  <div class="round"></div>
+                  三层A瓦优质
+                </label>
+                <input type="radio" name="box" id="C" class="radio">
+                <label for="C">
+                  <div class="round"></div>
+                  三层A瓦优质
+                </label>
+                <input type="radio" name="box" id="D" class="radio">
+                <label for="D">
+                  <div class="round"></div>
+                  三层A瓦优质
+                </label>
+                <input type="radio" name="box" id="E" class="radio">
+                <label for="E">
+                  <div class="round"></div>
+                  三层A瓦优质
+                </label>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  查看详情 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">zizizi</a></li>
+                  <li><a href="#">ziiziz</a></li>
+                  <li><a href="#">ziziiz</a></li>
+                  <li><a href="#">zizizi</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel-footer">
+              <button type="submit">下一步</button>
+            </div>
+
           </div>
-        
-      
-
-          <div class="panel-footer">
-            <a href="#" type="button">下一步</a>
-          </div>
-
-
-
-        </div>
-
+        </form>
       </div>
     </div>
+
   </main>
+
 
   <footer>
 
@@ -241,7 +240,7 @@
     </div>
 
     <div class="btmbar-blue text-center">
-      北京五一包装科技有限公司Copyright ©2015  51baozhuang.com015   All rights reserved.   京icp备99999999-1
+      北京五一包装科技有限公司Copyright ©2015 51baozhuang.com015 All rights reserved. 京icp备99999999-1
     </div>
   </footer>
 </body>

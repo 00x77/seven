@@ -151,7 +151,7 @@ footer {
 /*进度条结束*/
 
 /*表单开始*/
-.row > p {
+.row > form > p {
   display: flex;
   align-items: center;
   margin-top: 5.2rem;
@@ -159,7 +159,7 @@ footer {
   font-weight: 700;
 }
 
-.row > p::before {
+.row > form > p::before {
   display: inline-block;
   content: "";
   width: 0.4rem;
@@ -215,7 +215,7 @@ label {
   font-weight: 500;
 }
 
-.panel-body-box > form > label {
+.panel-body-box > .panel-body-left > label {
   margin-right: 6rem;
 }
 
@@ -272,13 +272,13 @@ label:hover > .round {
 /*选择箱型结束*/
 
 /*确定尺寸开始*/
-.panel-body-size > .panel-body-left > form {
+.panel-body-size > .panel-body-left > div {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.panel-body-size > .panel-body-left > form:first-child {
+.panel-body-size > .panel-body-left > div:first-child {
   margin-bottom: 2.5rem;
 }
 
@@ -385,10 +385,12 @@ label:hover > .round {
   }
 }
 
-.panel-footer > a {
+.panel-footer > button {
   width: 17.8rem;
   height: 4.6rem;
+  border: 0;
   border-radius: 0.5rem;
+  outline: none;
   font-size: 2.4rem;
   line-height: 4.6rem;
   text-align: center;
