@@ -1,6 +1,5 @@
 html {
     font-size: 62.5%;
-    font-size: 10px;
 }
 
 body {
@@ -20,9 +19,13 @@ header {
     background-color: #5fc0cd;
 }
 
+.topbar {
+    background-image: linear-gradient(#158ac7,#22abf2);
+}
+
 .close {
     position: absolute;
-    left: 3rem;
+    left: 1.6rem;
     line-height: 4.4rem;
     font-size: 1.6rem;
     text-decoration: none;
@@ -43,7 +46,7 @@ header {
 .login {
     position: absolute;
     top: 0;
-    right: 1.5rem;
+    right: 1.6rem;
     font-size: 1.6rem;
     line-height: 4.4rem;
     text-decoration: none;
@@ -57,7 +60,6 @@ main {
     width: 100%;
     min-width: 280px;
 }
-
 .wrap {
     display: flex;
     width: 100%;
@@ -106,27 +108,64 @@ main {
     vertical-align: top;
 }
 
+form > div:last-child {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0.7rem;
+}
+
 .sign {
     width: 100%;
-    height: 5rem;
     padding: 0;
     border: 0;
+    border-radius: 0.5rem;
     outline: none;
     font-size: 1.8rem;
-    background-color: #5fc0cd;
+    line-height: 5rem;
+    text-align: center;
+    background-color: #1ca9f4;
     color: white;
 }
 
-.forget {
-    float: right;
-    margin: 1rem 1.7rem 0 auto;
-    font-size: 1.6rem;
-    text-align: right;
+main > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem .7rem;
+    font-size: 1.2rem;
+}
+
+main > div > a {
     text-decoration: none;
-    color: #83ccd7;
+    color: #a5a6a7;
+    
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a:active {
-    color: purple;
+    color: #a214b3;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > div {
+    width: 100%;
+    padding: 0 4.6rem;
+    box-sizing: border-box;
+}
+
+footer > div > p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #bbbcbd;
+}
+
+footer > div > p::before {
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    background-color: #dcdddf;
 }

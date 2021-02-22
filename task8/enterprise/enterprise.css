@@ -77,9 +77,11 @@ footer {
 }
 
 .navbar-nav > li > a {
-  padding: 0 3.2rem 0 3.2rem;
-  border-top: .4rem solid transparent;
-  border-bottom: .4rem solid transparent;
+  width: 8rem;
+  margin: 0 auto;
+  padding: 0;
+  border-top: 0.4rem solid transparent;
+  border-bottom: 0.4rem solid transparent;
   line-height: 3rem;
   text-align: center;
   color: #fff !important;
@@ -87,7 +89,9 @@ footer {
 
 @media (min-width: 768px) {
   .navbar-nav > li > a {
-      line-height: 9.2rem;
+    padding: 0 3.2rem;
+    width: inherit;
+    line-height: 9.2rem;
   }
 }
 
