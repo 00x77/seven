@@ -1,0 +1,27 @@
+$dkBlue: #5fc0cd;
+$ltBlue: #55a8b3;
+
+@mixin MinWidth {
+    width: 100%;
+    min-width: 28rem;
+    box-sizing: border-box;
+}
+
+@mixin FixedBar {
+    position: fixed;
+    z-index: 9999;
+}
+
+@import "first";
+
+header {
+    @include MinWidth;
+    @include FixedBar;
+    top: 0;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    background-color: $dkBlue;
+}
