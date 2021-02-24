@@ -10,7 +10,7 @@ header,
 main,
 footer {
   width: 100%;
-  min-width: 45rem;
+  min-width: 50rem;
   overflow-x: hidden;
 }
 
@@ -61,6 +61,12 @@ footer {
   background-color: #fff;
 }
 
+@media(max-width: 768px) {
+  .navbar-toggle {
+    margin-top: 1rem;
+  }
+}
+
 .navbar-brand {
   height: inherit;
   padding: 2.5rem 1.5rem;
@@ -69,6 +75,16 @@ footer {
   outline: none !important;
   box-shadow: none !important;
   background-color: transparent;
+}
+
+@media(max-width: 768px) {
+  .navbar-brand {
+    padding: 0.7rem 1.5rem;
+  }
+
+  .navbar-brand  > img {
+    width: 80%;
+  }
 }
 
 .navbar-nav {
@@ -169,7 +185,7 @@ footer {
       padding: 2rem 11.5rem;
   }
 }
-
+/*
 .btn .caret {
   display: block;
   position: absolute;
@@ -187,9 +203,10 @@ footer {
 .panel-heading:hover + .panel-body {
   display: block;
 }
+*/
 
 .panel-left > .panel-body {
-  display: none;  
+  display: block;  
   padding: 2rem 1.5rem 0 4rem;
 }
 
