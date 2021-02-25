@@ -1,0 +1,212 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #29bde0;
+}
+
+header {
+  width: 100%;
+  min-width: 32.1rem;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+
+.top-bar {
+  border-bottom: 0.1rem solid #74d4eb;
+  background-color: #29bde0;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 4.4rem;
+  text-align: center;
+}
+
+.top-bar > a:first-child {
+  display: inline-block;
+  position: absolute;
+  top: 1.25rem;
+  left: 1rem;
+  width: 2.6rem;
+  height: 2.1rem;
+  background-image: url(../spr.png);
+  background-position-y: -12.3rem;
+}
+
+.top-bar > p {
+  letter-spacing: 0.2rem;
+  text-indent: 0.2rem;
+}
+
+.top-bar > a:last-child {
+  display: inline-block;
+  position: absolute;
+  top: 1.25rem;
+  right: 1rem;
+  width: 2.6rem;
+  height: 2rem;
+  background-image: url(../spr.png);
+  background-position: .6rem -10.3rem;
+}
+
+main {
+  width: 100%;
+  min-width: 32.1rem;
+  overflow-x: hidden;
+  position: absolute;
+  top: 4.4rem;
+}
+
+.content {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.content .title {
+  height: 11.4rem;
+  background-image: url(../main.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.content .title > h3 {
+  position: relative;
+  top: 6.4rem;
+  margin-top: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-indent: 0.1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.content > p:nth-child(2) {
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffc865;
+}
+
+.content .result {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #fff;
+}
+
+.content label {
+  display: inline-flex;
+}
+
+.content label .identity {
+  display: inline-block;
+  width: 3.9rem;
+  height: 1.8rem;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.content label .identity::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.content label .number {
+  margin-right: 2rem;
+}
+
+.content label:nth-child(3) .number {
+  margin-right: 0;
+}
+
+@media (min-width: 610px) {
+  .content > p:nth-child(2) {
+    text-align: center;
+  }
+}
+
+.line {
+  padding: 0.7rem 4rem 0.6rem;
+  border-bottom: 0.1rem solid #a6a6a6;
+  background-color: #fff;
+}
+
+.line > p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #a6a6a6;
+}
+
+.line > p:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line > p:first-child > span:first-child {
+  font-size: 1.5rem;
+  color: #515151;
+}
+
+.line > p:first-child > span:last-child {
+  font-size: 1.2rem;
+}
+
+footer {
+  width: 100%;
+  min-width: 32.1rem;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  display: flex;
+  padding: 1.2rem 0;
+  background-color: rgba(41, 189, 224, 0.5);
+}
+
+footer > button {
+  flex: 1;
+  height: 4.3rem;
+  margin: 0 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #fbb435;
+  color: #fff;
+}
+
+footer > button:first-child {
+  background-color: #f66f6f;
+}
+
+footer > button:first-child a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 4.3rem;
+  color: #fff;
+}

@@ -1,0 +1,14 @@
+.d1 {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    display: table;
+}
+
+.d2 {
+    display: table-cell;
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    vertical-align: middle;
+}
