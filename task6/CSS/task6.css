@@ -102,8 +102,8 @@ header > .btn-group > .dropdown > div > .dropdown-toggle {
 
 header > .btn-group > .dropdown > div > .dropdown-toggle > .caret {
   border-top: 0.4rem solid #afbac0;
-  border-left: 0.3rem solid transform;
-  border-right: 0.3rem solid transform;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
