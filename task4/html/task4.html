@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>登录页</title>
-    <link rel="stylesheet" href="task4.css">
+    <link rel="stylesheet" href="../css/task4.css">
 </head>
 
 <body>
     <header>
 
-        <div class="topbar">
+        <div class="navbar">
             <a href="#" class="close">关闭</a>
             <p class="theme">登陆</p>
             <a href="#" class="login">注册</a>
@@ -22,59 +22,57 @@
     <main>
         <form>
 
-            <div class="wrap">
-                <label>
+            <div class="phonenumber-line">
+                <label for="phonenumber">
                     <img class="iphone" src="../img/iphone.png" alt="iphone">
                 </label>
-                <input class="enter" type="text" placeholder="请输入手机号" maxlength="11">
+                <input id="phonenumber" class="enter" type="text" placeholder="请输入手机号" maxlength="11">
             </div>
 
-            <div class="case">
-                <label>
+            <div class="password-line">
+                <label for="password">
                     <img class="locked" src="../img/locked.png" alt="locked">
                 </label>
-                <input class="enter" type="password" placeholder="请输入密码" minlength="8" maxlength="16">
+                <input id="password" class="enter" type="password" placeholder="请输入密码" minlength="8" maxlength="16">
             </div>
 
             <div>
-                <button type="submit" class="sign">登&nbsp;&nbsp;陆</button>
+                <button type="submit">登&nbsp;&nbsp;陆</button>
             </div>
 
         </form>
 
         <div>
             <a href="#">立即注册</a>
-            <a href="#" class="forget">忘记密码？</a>
+            <a href="#">忘记密码？</a>
         </div>
 
-    </main>
-
-    <footer>
-         
         <div>
 
-            <p>第三方账号登录</p>
+            <p>
+                <span class="btn-group-title">&nbsp;&nbsp;第三方账号登录&nbsp;&nbsp;</span>
+            </p>
 
-            <div>
+            <div class="btn-group">
 
-                <div class="thumbnail">
+                <a type="button" href="#" class="btn">
                     <img src="../img/weixin.png">
                     <p>微信登录</p>
-                </div>
-                <div class="thumbnail">
+                </a>
+                <a type="button" href="#" class="btn">
                     <img src="../img/weibo.png">
                     <p>微博登录</p>
-                </div>
-                <div class="thumbnail">
+                </a>
+                <a type="button" href="#" class="btn">
                     <img src="../img/qq.png">
-                    <p>QQ登录</p>
-                </div>
+                    <p>qq登录</p>
+                </a>
 
             </div>
 
         </div>
 
-    </footer>
+    </main>
 
 </body>
 
