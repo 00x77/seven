@@ -1,0 +1,159 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+header,
+main {
+  width: 100%;
+  min-width: 32.1rem;
+  overflow-x: hidden;
+}
+
+.navbar {
+  height: 3.2rem;
+  padding: 1rem;
+  background-color: #29bde0;
+}
+
+.navbar .icon-bar {
+  display: block;
+  width: 1.7rem;
+  height: 0.2rem;
+  margin-bottom: 0.3rem;
+  background-color: #fff;
+}
+
+.navbar .icon-bar:last-child {
+  margin-bottom: 0;
+}
+
+.content {
+  padding: 3rem 2.5rem 0 2.5rem;
+}
+
+.content > .panel {
+  border: 0.1rem solid #c9c9c9;
+  background-color: #fff;
+}
+
+.content > .panel:first-child {
+  margin-bottom: 2.5rem;
+}
+
+.content > .panel:first-child .panel-body {
+  position: relative;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 5.8rem;
+  letter-spacing: 0.1rem;
+  color: #9a9a9a;
+}
+
+.content > .panel:first-child .panel-body a {
+  display: block;
+  position: absolute;
+  top: 2.3rem;
+  right: 0.7rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-top: 0.3rem solid #e7e7e7;
+  border-right: 0.3rem solid #e7e7e7;
+  transform: rotate(45deg);
+}
+
+.content > .panel:last-child .panel-heading {
+  border-bottom: 0.1rem solid #fdd793;
+  font-size: 1.8rem;
+  line-height: 4.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: #fbb435;
+}
+
+.content > .panel:last-child .panel-body {
+  position: relative;
+  padding: 1.5rem 2.5rem 0 2.5rem;
+}
+
+.content button[type=button] {
+  width: 100%;
+  background-color: #69d1e9;
+  color: #fff;
+}
+
+.content button[type=button] a {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 6.6rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+}
+
+.content button[type=button] + p {
+  font-size: 1.2rem;
+  line-height: 4rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: #787878;
+}
+
+.turn-page {
+  position: absolute;
+  top: 14.5rem;
+  right: 0.4rem;
+  width: 1.4rem;
+  height: 2.8rem;
+  background-image: url(../spr.png);
+  background-color: transparent;
+}
+
+.pagination {
+  position: relative;
+  bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 4.6rem;
+  height: 0.8rem;
+  padding-left: 0;
+  margin: 0.5rem auto 0;
+  list-style: none;
+}
+
+.pagination li {
+  float: left;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.pagination .active {
+  background-color: #69d1e9;
+}
