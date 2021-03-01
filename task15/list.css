@@ -1,0 +1,115 @@
+
+.panel-body > .col-lg-4 {
+    border-bottom: 0 !important;
+    margin-bottom: 5rem;
+}
+
+.line {
+    margin-top: -1.5rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 0.5rem #e2e2e2;
+}
+
+.none {
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: none;
+    height: 100%;
+    padding: 4rem;
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    z-index: 99;
+}
+
+.line:hover > .none {
+    display: block;
+}
+
+.none > p {
+    line-height: normal;
+}
+
+.none > p:first-child {
+    padding: 4rem 0;
+    margin-bottom: 0;
+}
+
+.media {
+    padding: 2rem 1rem 1.6rem 1.1rem;
+    border-bottom: .1rem solid #edf1f2;
+}
+
+.media-heading {
+    margin-bottom: 1.8rem;
+}
+
+.media-body > p {
+    font-size: 1.4rem;
+    line-height: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 0;
+}
+
+.container-fluid > .row > .col-md-6 {
+    border-bottom: 0.1rem solid #edf1f2;
+    font-size: 1.2rem;
+    line-height: 4rem;
+}
+
+.container-fluid > .row > .col-md-6 > img {
+    margin-right: 1rem;
+}
+
+.container-fluid > .row > .col-md-6 > span {
+    margin-right: 1.2rem;
+    color: #999;
+}
+
+.container-fluid > .row > .col-md-6 > label {
+    margin-bottom: 0;
+    color: #f01400;
+}
+
+.col-md-5 {
+    font-size: 1.2rem;
+    line-height: 4rem;
+    border-bottom: 0.1rem solid #edf1f2;
+    background-color: #fff;
+    color: #999;
+}
+
+@media (min-width: 992px) {
+    .col-md-5 {
+        height: 10.5rem;
+        line-height: 10.5rem;
+    }
+}
+
+.col-md-7 {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    border-bottom: 0.1rem solid #edf1f2;
+}
+
+.col-md-12 {
+    padding: 0 1rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+.col-md-12 > label {
+    margin-bottom: 0;
+    color: #f01400;
+}
+
+.col-md-12 > span {
+    font-size: 1.2rem;
+    color: #999;
+}
+/*职业列表结束*/

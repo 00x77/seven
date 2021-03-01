@@ -1,0 +1,179 @@
+@charset "UTF-8";
+header, main, footer {
+  width: 100%;
+  min-width: 55rem;
+}
+
+/*导航栏开始*/
+.navbar {
+  background-color: #29b078;
+}
+
+@media (max-width: 770px) {
+  .navbar-brand {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .navbar-brand > img {
+    width: 70%;
+  }
+}
+
+.navbar-nav {
+  margin-right: -2.5rem;
+}
+
+.navbar-nav li {
+  float: left;
+}
+
+.navbar-nav li a {
+  width: 10rem;
+  font-size: 1.6rem;
+  line-height: 4.8rem;
+  text-align: center;
+  border-top: 0.4rem solid transparent;
+  border-bottom: 0.4rem solid transparent;
+  color: #fff;
+}
+
+.navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {
+  border-bottom-color: #fff;
+}
+
+.navbar-nav .active a {
+  border-bottom: 0.4rem solid #fff;
+}
+
+@media (min-width: 770px) {
+  .navbar-nav > li > a {
+    line-height: 9.2rem;
+  }
+}
+
+/*导航栏结束*/
+/*面包屑导航开始*/
+.breadcrumb {
+  display: block;
+  overflow: hidden;
+  font-size: 1.6rem;
+}
+
+.breadcrumb li {
+  float: left;
+}
+
+.breadcrumb li a {
+  line-height: 8rem;
+  color: #333;
+}
+
+.breadcrumb .active a {
+  color: #29b078;
+}
+
+.breadcrumb li + li::before {
+  content: ">";
+  color: #333;
+}
+
+/*面包屑导航结束*/
+/*页面内跳转按钮开始*/
+.turn-i {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid #edf1f2;
+}
+
+.turn-i-title {
+  font-size: 1.4rem;
+  white-space: nowrap;
+  color: #999;
+}
+
+.turn-i-body a {
+  margin: 0 1.2rem;
+  padding: 0.4rem;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: #000;
+}
+
+.turn-i-body .active {
+  background-color: #29b078;
+  color: #fff;
+}
+
+.turn-i-body .disabled {
+  color: #999;
+}
+
+@media (max-width: 610px) {
+  .turn-i-body a {
+    width: 6.4rem;
+    height: 2.8rem;
+    text-align: justify;
+    overflow: hidden;
+  }
+  .turn-i-body a::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/*页面内跳转按钮结束*/
+.panel {
+  border-width: 0.1rem;
+  border-style: solid;
+  border-radius: 0.5rem;
+}
+
+.panel-heading {
+  border-bottom-width: 0.1rem;
+  border-bottom-style: solid;
+}
+
+.media-left {
+  float: left;
+}
+
+.media-body {
+  width: 100%;
+}
+
+/*底栏开始*/
+.btmbar {
+  background-color: #29b078;
+  border-top: 0.1rem solid #32c086;
+  border-bottom: 0.1rem solid #32c086;
+}
+
+.btmbar a:hover,
+.btmbar a:focus,
+.btmbar a:active {
+  border-color: #fff;
+}
+
+@media (max-width: 770px) {
+  .btmbar .col-sm-5:first-child > p:first-child {
+    margin-bottom: 3rem;
+  }
+  .btmbar .col-sm-5:nth-child(2) {
+    float: left;
+  }
+  .btmbar .col-sm-2:last-child {
+    float: right;
+  }
+}
+
+.Lbtmbar {
+  background-color: #29b078;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+/*底栏结束*/
