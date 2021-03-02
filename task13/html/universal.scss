@@ -255,19 +255,19 @@ main {
 }
 
 @media(max-width: 664px) {
-    .media1 {
+    .media-width {
         max-width: 48rem;
     }
 }
 
 @media(min-width: 610px) {
-    .media2 {
+    .media-text {
         text-align: center;
     }
 }
 
 @media(min-width: 307px) {
-    .media3 {
+    .media-mr {
         margin-right: 0;
     }
 }
